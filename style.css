@@ -3,7 +3,128 @@
   padding: 0;
 }
 
-body {
-  width: 1682px;
-  height: 2753px;
+/* กำหนดสีให้ */
+:root {
+  --background-color: #232830;
+  --nav-text-color: #ffff;
+  --head-text-color: #ff7575;
+  --font-menu: #909090;
+}
+
+body,
+.container-main-center {
+  background-color: var(--background-color);
+}
+
+/* Font */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* End Font */
+
+/* กล่อง container จัดให้ตรงกลางทั้งหมด */
+.container-main-center {
+  margin: 50px 150px;
+}
+
+/* กล่อง navbar */
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* List ของ Navbar */
+.menu-nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 36px;
+  font-size: 16px;
+}
+
+.logo {
+  font-size: 20px;
+  color: var(--nav-text-color);
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
+nav p,
+nav a,
+.head p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ส่วนของ Sec hed */
+.head img {
+  width: 110px;
+  display: block;
+  margin: 1rem;
+}
+
+.head p {
+  text-align: center;
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.head .p-h1 {
+  font-size: 40px;
+  color: var(--head-text-color);
+  padding-bottom: 1rem;
+}
+
+.head p {
+  color: var(--nav-text-color);
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu li {
+  list-style: none;
+  color: var(--font-menu);
+  font-family: "Recursive", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.long-line {
+  border: none;
+  height: 2px;
+  background-color: #313131ab;
+}
+
+.menu img {
+  width: 15px;
+  height: 15px;
+}
+
+.container-card ul{
+  display: grid;
 }
