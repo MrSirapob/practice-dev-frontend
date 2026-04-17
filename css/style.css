@@ -136,6 +136,8 @@ nav a,
 }
 
 .container-card .con-item div {
+  display: flex;
+  flex-direction: column;
   background-color: #ffff;
   list-style-type: none;
   border-radius: 1rem;
@@ -164,8 +166,11 @@ nav a,
 }
 
 .card-p3 {
+  margin-top: auto;
   padding-top: 0.7rem;
   font-size: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .pagination {
