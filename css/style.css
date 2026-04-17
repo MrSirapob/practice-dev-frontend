@@ -128,14 +128,14 @@ nav a,
   height: 15px;
 }
 
-.container-card ul {
+.container-card .con-item {
   display: grid;
   grid-template-columns: repeat(3, 250px);
   gap: 2rem;
   justify-content: center;
 }
 
-.container-card li {
+.container-card .con-item div {
   background-color: #ffff;
   list-style-type: none;
   border-radius: 1rem;
