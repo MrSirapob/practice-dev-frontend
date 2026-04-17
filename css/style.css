@@ -128,9 +128,15 @@ nav a,
   height: 15px;
 }
 
+.container-card {
+  max-width: 900px;
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
 .container-card .con-item {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
   justify-content: center;
 }
